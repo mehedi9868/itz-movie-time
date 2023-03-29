@@ -12,7 +12,7 @@ const Home = () => {
         loadMovies();
     }, [])
     return (
-        <div className='col-8 d-flex'>
+        <div className='col-8'>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 {
                     movies.map((movie, index) => <Movie
@@ -21,7 +21,6 @@ const Home = () => {
                     ></Movie>)
                 }
             </div>
-
         </div>
     );
 };
